@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Melhores Jogos Indies</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: #000 url('black hole.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #FFFFFF;
+            font-family: Arial, sans-serif;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: rgba(0, 0, 0, 0.75);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            padding: 30px;
+            border-radius: 12px;
+            max-width: 550px;
+            width: 100%;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.8);
+        }
+
+        h5 {
+            font-family: 'Impact', sans-serif;
+            font-size: 2.2rem;
+            color: #FFFFFF;
+            letter-spacing: 1px;
+            text-align: center;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #FFFFFF;
+            padding-bottom: 10px;
+        }
+
+        /* Lista de tópicos clicáveis */
+        .topics-list {
+            list-style: decimal inside;
+            margin-bottom: 20px;
+        }
+
+        .topic-item {
+            font-size: 1.2rem;
+            font-weight: bold;
+            padding: 10px 15px;
+            margin-bottom: 10px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .topic-item:hover {
+            background: rgba(255, 255, 255, 0.25);
+        }
+
+        /* Seção de detalhes dos jogos */
+        .game-detail {
+            display: none;
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.3);
+            text-align: center;
+        }
+
+        .game-detail.active {
+            display: block;
+        }
+
+        .game-detail img {
+            width: 100%;
+            max-height: 250px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .game-detail h6 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            font-family: 'Impact', sans-serif;
+            letter-spacing: 1px;
+        }
+
+        .game-detail p {
+            font-size: 0.95rem;
+            line-height: 1.5;
+            color: #E0E0E0;
+            margin-bottom: 15px;
+        }
+
+        .back-btn {
+            background: #FFFFFF;
+            color: #000000;
+            border: none;
+            padding: 8px 16px;
+            font-weight: bold;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: opacity 0.2s;
+        }
+
+        .back-btn:hover {
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h5>Melhores jogos Indies</h5>
+
+        <ol id="main-list" class="topics-list">
+            <li class="topic-item" onclick="showGame('celeste')">Celeste</li>
+            <li class="topic-item" onclick="showGame('moon-leap')">Moon Leap</li>
+            <li class="topic-item" onclick="showGame('hollow-knight')">Hollow Knight</li>
+        </ol>
+
+        <div id="celeste" class="game-detail">
+            <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?w=600" alt="Celeste">
+            <h6>Celeste</h6>
+            <p>Ajude Madeline a sobreviver aos seus demônios internos em sua jornada até o topo da Montanha Celeste neste jogo de plataforma super afiado dos criadores de TowerFall.</p>
+            <button class="back-btn" onclick="hideDetails()">Voltar à lista</button>
+        </div>
+
+        <div id="moon-leap" class="game-detail">
+            <img src="https://images.unsplash.com/photo-1506703719100-a0f3a48c0f86?w=600" alt="Moon Leap">
+            <h6>Moon Leap</h6>
+            <p>Um jogo de plataforma e quebra-cabeça brasileiro sobre uma pequena criatura espacial que altera o dia e a noite a cada pulo para resgatar estrelas caídas.</p>
+            <button class="back-btn" onclick="hideDetails()">Voltar à lista</button>
+        </div>
+
+        <div id="hollow-knight" class="game-detail">
+            <img src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?w=600" alt="Hollow Knight">
+            <h6>Hollow Knight</h6>
+            <p>Forje seu próprio caminho em Hollow Knight! Uma aventura épica em estilo ação 2D por um vasto reino arruinado de insetos e heróis.</p>
+            <button class="back-btn" onclick="hideDetails()">Voltar à lista</button>
+        </div>
+    </div>
+
+    <script>
+        function showGame(id) {
+            // Esconde todas as telas de detalhes
+            const details = document.querySelectorAll('.game-detail');
+            details.forEach(detail => detail.classList.remove('active'));
+
+            // Mostra o detalhe do jogo selecionado
+            document.getElementById(id).classList.add('active');
+        }
+
+        function hideDetails() {
+            // Esconde os detalhes
+            const details = document.querySelectorAll('.game-detail');
+            details.forEach(detail => detail.classList.remove('active'));
+        }
+    </script>
+
+</body>
+</html>
