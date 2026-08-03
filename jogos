@@ -129,21 +129,21 @@
         </ol>
 
         <div id="celeste" class="game-detail">
-            <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?w=600" alt="Celeste">
+            <img src="https://i0.wp.com/thegamingoutsider.com/wp-content/uploads/2018/02/Celeste5.png?fit=768%2C432&ssl=1" alt="Celeste">
             <h6>Celeste</h6>
             <p>Ajude Madeline a sobreviver aos seus demônios internos em sua jornada até o topo da Montanha Celeste neste jogo de plataforma super afiado dos criadores de TowerFall.</p>
             <button class="back-btn" onclick="hideDetails()">Voltar à lista</button>
         </div>
 
         <div id="moon-leap" class="game-detail">
-            <img src="https://images.unsplash.com/photo-1506703719100-a0f3a48c0f86?w=600" alt="Moon Leap">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHkGIIZ96c1TD-MYPJM5apiJKvAlKVT4me_eQBm07RG8DMCi4Xfo_zqq9Z&s=10" alt="Moon Leap">
             <h6>Moon Leap</h6>
             <p>Um jogo de plataforma e quebra-cabeça brasileiro sobre uma pequena criatura espacial que altera o dia e a noite a cada pulo para resgatar estrelas caídas.</p>
             <button class="back-btn" onclick="hideDetails()">Voltar à lista</button>
         </div>
 
         <div id="hollow-knight" class="game-detail">
-            <img src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?w=600" alt="Hollow Knight">
+            <img src="https://jaeplay.com.br/wp-content/uploads/2025/04/apps.24270.13847644057609868.a4a91f76-8d1c-4e19-aa78-f4d27d2818fb.jpeg" alt="Hollow Knight">
             <h6>Hollow Knight</h6>
             <p>Forje seu próprio caminho em Hollow Knight! Uma aventura épica em estilo ação 2D por um vasto reino arruinado de insetos e heróis.</p>
             <button class="back-btn" onclick="hideDetails()">Voltar à lista</button>
@@ -168,4 +168,5 @@
     </script>
 
 </body>
+</html>
 </html>
