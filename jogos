@@ -12,7 +12,7 @@
         }
 
         body {
-            background: #000 url('black hole.jpg') no-repeat center center fixed;
+            background: #000 url("https://img.magnific.com/free-vector/monochrome-low-poly-design_1048-17214.jpg?semt=ais_hybrid&w=740&q=80") no-repeat center center fixed;
             background-size: cover;
             color: #FFFFFF;
             font-family: Arial, sans-serif;
