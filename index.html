@@ -15,22 +15,63 @@
             text-align: center;
             background-color: rgb(56, 134, 223);
         }
+        
         main{
+            text-align: left;
             -webkit-text-stroke: 1px black;
             -webkit-text-fill-color: white;
             background-color: rgb(23, 76, 175);
         }
+        main2{
+            text-align: left;
+            -webkit-text-stroke: 1px black;
+            -webkit-text-fill-color: white;
+            background-color: rgb(23, 76, 175);
+        }
+        
     </style>
 </head>
 <body>
     <header>
         <h1>PROJETO GUILHERME</h1>
     </header>
-
+    <article>
     <main>
-        <h2>o que precisa?</h2>
-        <h2>nada por que é só um teste</h2>
-        <h2>so para avisar "div" é divisão </h2>
-    </main>
+        <h1>o que precisa?</h1>
+        <h1>nada por que é só um teste</h1>
+        <h1>so para avisar "div" é divisão </h1>
+        <h1>se gostou deixe um like </h1>
+        <button>❤️<span>0</span></button>
+        <button>👍​<span>0</span></button>
+    </article>
+    <article>
+    </main2>
+        <main>
+        <h1>nada prercisa</h1>
+        <h1>este blog é um teste</h1>
+        <h1>muito top </h1>
+        <h1>se gostou deixe um like </h1>
+        <button>❤️<span>0</span></button>
+        <button>👍​<span>0</span></button>
+    </main2>
+    </article>
 </body>
+<script>
+    botoes.forEach(function(botao) {
+    botao.addEventListener("click", botaoClicado);
+
+    function botaoClicado() {
+    console.log("fui clicado");
+    let texto = botao.querySelector("span");
+
+    if (curtiu === false) {
+    texto.textContent++;
+    curtiu = true;
+    } else {
+    texto.textContent--;
+    curtiu = false;
+    }
+    }
+    });
+</script>
 </html>
